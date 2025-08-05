@@ -1,0 +1,163 @@
+---
+title: "Taller 1 Investigación Cuantitativa"
+subtitle: " "
+author: ""
+date: " "
+output:
+  xaringan::moon_reader:
+    css: ["xaringan_custom/xaringan-themer.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      beforeInit: "xaringan_custom/macros.js"
+    number_sections: true
+    seal: false # esto omite title slide automática
+---
+class: inverse, bottom, right
+
+```{r, include=FALSE,echo=FALSE,results='hide'}
+#install.packages("pagedown")
+#pagedown::chrome_print("Presentacion.html",output="Presentacion.pdf")
+```
+
+
+```{r setup, include=FALSE, cache = FALSE}
+
+library(dplyr)
+require("knitr")
+options(htmltools.dir.version = FALSE)
+pacman::p_load(RefManageR)
+ 
+```
+
+```{r eval=FALSE, echo=FALSE}
+# Correr esta linea para ejecutar
+rmarkdown::render('xaringan::moon_reader')
+```
+
+# __Primera cátedra: Método Cuantitativo II__
+## * Presentación del curso y objetivos de investigación *
+<br>
+<hr>
+# 
+
+### Docente: Francisco Meneses
+
+
+<br>
+
+---
+
+# Contenido
+
++ Programa del curso
+  - Los contenidos
+  - La dinámica
+  - Las evaluaciones
+
++ Investigar cuantitativamente
+  - El rol de la evidencia 
+  - Tipos de preguntas de investigación 
+  - Ejemplos de investigación cuantitativa
+  
+
+
+---
+class: inverse, middle, center, slideInRight
+
+#  Presentación del curso
+---
+
+
+## Resultados de aprendizaje
+
+- **Aplica métodos cuantitativos** al ámbito de la Ciencia Política, **seleccionando técnicas** avanzadas y **pertinentes** para el contexto de la investigación.
+
+    -  *¿Cuándo aplicar cada técnica estadística?* 
+
+
+--
+
+- **Analiza los datos** derivados de la aplicación de los métodos cuantitativos, interpretándolos **a partir de ** los problemas y **preguntas de la investigación**.
+
+    - *¿Cómo interpretamos los datos en función de la teoría?* 
+
+
+--
+
+- **Comunica** los resultados del análisis cuantitativo desarrollado, aplicando **herramientas** avanzadas para su **visualización**.
+
+    - *¿Cómo explicamos al público resultados complejos? *
+
+
+---
+
+## Contenidos 
+
+ -  U1: **Conceptos básicos de la estadística** 
+ 
+    * Niveles de medición 
+    * Estadísticos de tendencia central y dispersión
+    * Intervalos de confianza
+    * Teoría del Límite Central
+
+--
+
+- U2: **Estadísticos de asociación**
+
+    * Prueba T
+    * Correlación
+    * Regresión Lineal 
+    * Regresión Lineal Múltiple
+    
+--
+
+- U3: **Extensiones de la regresión**
+
+    * Mediación y Moderación
+    * Regresión logística binaria 
+    * Regresión Poisson
+
+---
+
+## Dinámica
+
+ * Martes: Cátedra
+    + Exposición
+    + Participación guiada
+    + Ticket de salida (encuestas formativas)
+    + Trabajo en grupo
+
+--
+
+ * Jueves: Taller de R
+    + Explicación de códigos
+    + Práctica guiada
+    + Trabajo en proyecto (3-4)
+
+---
+
+## Evaluaciones
+  
+  * Pruebas de cierre de unidad - RA2 (50%)
+      * Unidad 2: Prueba T, Correlación y Regresión **25%**
+        + _Martes 30 de septiembre_
+      * Unidad 3: Mediación, moderación y MLG **25%**
+        + _Jueves 13 de noviembre_
+      
+  * Trabajo de investigación (30%)
+      * Informe individual **15%** - RA1
+      * Exposición grupal **15%** - RA3
+          + ¿Video o presentación?
+      
+  * Completar ticket de salida (20%)
+      * Obtendrá puntaje máximo al completar todos los tickets en el plazo 
+  
+---
+
+class: inverse, middle, center, slideInRight
+
+#  ¿Dudas, comentarios o sugerencias? 
+
